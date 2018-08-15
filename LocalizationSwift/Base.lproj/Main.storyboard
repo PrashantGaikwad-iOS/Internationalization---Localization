@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalizationSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi I am Prashant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d27-1s-TeA">
+                                <rect key="frame" x="16" y="20" width="343" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="paY-bG-gmF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am an iOS developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-nu-rg7">
+                                <rect key="frame" x="16" y="100" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I stay in Pune" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSz-Ul-QIh">
+                                <rect key="frame" x="16" y="180" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My hobby is to play cricket." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaO-Gs-os4">
+                                <rect key="frame" x="16" y="260" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love travelling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ud-sO-bba">
+                                <rect key="frame" x="16" y="340" width="343" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DaO-Gs-os4" firstAttribute="trailing" secondItem="WSz-Ul-QIh" secondAttribute="trailing" id="0vq-R2-5P0"/>
+                            <constraint firstItem="6Hb-nu-rg7" firstAttribute="trailing" secondItem="d27-1s-TeA" secondAttribute="trailing" id="6FX-8B-vUM"/>
+                            <constraint firstItem="6Hb-nu-rg7" firstAttribute="leading" secondItem="d27-1s-TeA" secondAttribute="leading" id="8MC-NB-wbH"/>
+                            <constraint firstItem="6Hb-nu-rg7" firstAttribute="height" secondItem="d27-1s-TeA" secondAttribute="height" id="DmI-0f-Gue"/>
+                            <constraint firstItem="d27-1s-TeA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dv7-2N-pas"/>
+                            <constraint firstItem="DaO-Gs-os4" firstAttribute="leading" secondItem="WSz-Ul-QIh" secondAttribute="leading" id="JCC-XL-Bhr"/>
+                            <constraint firstItem="WSz-Ul-QIh" firstAttribute="top" secondItem="6Hb-nu-rg7" secondAttribute="bottom" constant="8" id="Qkf-SM-yhZ"/>
+                            <constraint firstItem="DaO-Gs-os4" firstAttribute="height" secondItem="7ud-sO-bba" secondAttribute="height" constant="-3" id="TNC-Nd-5FO"/>
+                            <constraint firstItem="DaO-Gs-os4" firstAttribute="height" secondItem="WSz-Ul-QIh" secondAttribute="height" id="W9p-5h-vEj"/>
+                            <constraint firstItem="7ud-sO-bba" firstAttribute="trailing" secondItem="DaO-Gs-os4" secondAttribute="trailing" id="Xfn-5w-gBB"/>
+                            <constraint firstItem="DaO-Gs-os4" firstAttribute="top" secondItem="WSz-Ul-QIh" secondAttribute="bottom" constant="8" id="apG-0F-QC8"/>
+                            <constraint firstItem="6Hb-nu-rg7" firstAttribute="top" secondItem="d27-1s-TeA" secondAttribute="bottom" constant="8" id="bxB-8d-Vzx"/>
+                            <constraint firstItem="WSz-Ul-QIh" firstAttribute="height" secondItem="6Hb-nu-rg7" secondAttribute="height" id="qU1-GB-dWz"/>
+                            <constraint firstItem="d27-1s-TeA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="soI-66-Uqe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d27-1s-TeA" secondAttribute="trailing" constant="16" id="uCI-H8-eox"/>
+                            <constraint firstItem="WSz-Ul-QIh" firstAttribute="trailing" secondItem="6Hb-nu-rg7" secondAttribute="trailing" id="uJC-IB-dsX"/>
+                            <constraint firstItem="WSz-Ul-QIh" firstAttribute="leading" secondItem="6Hb-nu-rg7" secondAttribute="leading" id="vb2-ad-X7I"/>
+                            <constraint firstItem="7ud-sO-bba" firstAttribute="top" secondItem="DaO-Gs-os4" secondAttribute="bottom" constant="8" id="x4n-ZW-zee"/>
+                            <constraint firstItem="7ud-sO-bba" firstAttribute="leading" secondItem="DaO-Gs-os4" secondAttribute="leading" id="zFh-pe-mDS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
         </scene>
     </scenes>
 </document>

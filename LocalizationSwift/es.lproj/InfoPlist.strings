@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  LocalizationSwift
+
+  Created by Prashant G on 8/2/18.
+  Copyright © 2018 MyOrg. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Localización";
